@@ -1,14 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<style> 
+        body {background-color: MediumSeaGreen;}
+        h1 {color: blue;}
+        p {color: red;}
+    </style> (this is Internal CSS)-->
+
+    <!--<link> rel="stylesheet" href="style.css" (this is External CSS)-->
+    <style>
+        /*set image as background of full page*/
+        /*body {
+            background-image: url('pic_trulli.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }*/
+        
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        
+        a:visited {
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        
+        a:link,
+        a:visited {
+            background-color: #f44336;
+            color: white;
+            padding: 15px 25px;
+            margin: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        a:hover,
+        a:active {
+            background-color: blue;
+        }
+        /*Table collapse*/
+        
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            /*border-collapse: collapse;*/
+            padding: 15px
+        }
+        /*Table Add Cell Padding*/
+        
+        td,
+        td {
+            padding: 15px;
+        }
+        /*Table Left align Headings*/
+        
+        th,
+        td {
+            text-align: center;
+        }
+        /*Table Add Border Spacing*/
+        
+        table {
+            border-spacing: 15px;
+        }
+        /*Specific Style*/
+        
+        #t01 {
+            width: 100%;
+            background-color: #f1f1f1;
+        }
+        
+        #t01 tr:nth-child(even) {
+            background-color: #eee;
+        }
+        
+        #t01 tr:nth-child(odd) {
+            background-color: #fff;
+        }
+        
+        #t01 th {
+            color: white;
+            background-color: black;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: #111111;
+        }
+    </style>
     <title>My Portfolio</title>
 </head>
 
 <body>
-    <h1>Welcome to my Portfolio!</h1>    
+
+    <!--Bookmark-->
+    <h2 id="C4">Chapter 4</h2>
+
+    <!--Background color-->
+    <h1 style="background-color:powderblue">Welcome to my Portfolio!</h1>
+    <p style="background-color:tomato">Welcome to my Portfolio</p>
+
+    <!--Text Color-->
+    <h1 style="color:blue">This is a heading</h1>
+    <p style="color:red">This is a paragraph</p>
+
+    <!--Fonts-->
+    <h1 style="font-family:verdana;">This is a heading</h1>
+    <p style="font-family:courier;">This is a paragraph</p>
+
+    <!--Text Size-->
+    <h1 style="font-size:300%">This is a heading</h1>
+    <p style="font-size:160%">This is a paragraph</p>
+
+    <!--Text Alignment-->
+    <h1 style="text-align:center">Centered Heading</h1>
+    <p style="text-align:center">Centered paragraph</p>
+
+    <!--Bold and Strong Elements-->
+    <b>This text is bold</b>
+    <strong>This text is important</strong>
+
+    <!--HTML <i> and <em> Elements-->
+    <i>This text is italic</i>
+    <em>This text is emphasized</em>
+
+    <!--HTML <small>-->
+    <small>This is some smaller text</small>
+    <p>Do not forget to buy <mark>milk</mark> today.</p>
+
+    <!--HTML <del> element-->
+    <p>My favourite color is <del>blue</del> red.</p>
+
+    <!--HTML <ins> Element-->
+    <p>My favourite color is <del>blue</del> <ins>red</ins>.</p>
+
+    <!--HTML <sub> Element-->
+    <p>This is <sub>subcripted</sub> text.</p>
+
+    <!--HTML <sup> ELement-->
+    <p>This is <sup>superscripted</sup></p>
+    <p>Here is a quote from WWF's website:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature. The world's leading conversation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</blockquote>
+
+    <!--HTML <q> for Short Quotations-->
+    <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+    <!--HTML <abbr> for Abbreviations-->
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+    <!--HTML <address> for Contact Information-->
+    <address>
+        Written by John Doe. <br>
+        Visit us at: <br>
+        Example.com <br>
+        Box 564, Disneyland <br>
+        USA
+    </address>
+
+    <!--HTML <cite> for Work Title-->
+    <p> <cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+    <!--HTML <bdo> for Bi-Directional Override-->
+    <bdo dir="rtl">This text will be written from right to left</bdo>
+
+    <!--RGB colors-->
+    <h1 style="background-color:rgb(255,0,0);">rgb(255,0,0)</h1>
+
+    <h1 style="background-color:rgb(0,0,255);">rgb(0,0,255)</h1>
+
+    <h1 style="background-color: rgb(60, 179, 113);">rgb(60, 179, 113)</h1>
+
+    <h1 style="background-color: rgb(238, 130, 238);">rgb(238, 130, 238)</h1>
+
+    <h1 style="background-color: rgb(255, 165, 0);">rgb(255, 165, 0)</h1>
+
+    <h1 style="background-color: rgb(106, 90, 205);">rgb(106, 90, 205)</h1>
+
+    <!--Shades of Gray-->
+    <h1 style="background-color: rgb(60,60,60);">rgb(60, 60, 60)</h1>
+
+    <h1 style="background-color: rgb(100,100,100);">rgb(100,100,100)</h1>
+
+    <h1 style="background-color: rgb(140,140,140);">rgb(140, 140, 140)</h1>
+
+    <h1 style="background-color: rgb(180,180,180);">rgb(180, 180, 180)</h1>
+
+    <h1 style="background-color: rgb(200,200,200);">rgb(200,200,200)</h1>
+
+    <h1 style="background-color: rgb(240,240,240);">rgb(240,240,240)</h1>
+
+    <!--RGBA Color Values-->
+    <h1 style="background-color: rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h1>
+
+    <h1 style="background-color: rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h1>
+
+    <h1 style="background-color: rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</h1>
+
+    <h1 style="background-color: rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6(</h1>
+
+    <h1 style="background-color: rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</h1>
+
+    <h1 style="background-color: rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h1>
+
+    <!--HEX Color Values-->
+    <h1 style="background-color: #ff0000;">#ff0000</h1>
+
+    <h1 style="background-color: #0000ff;">#0000ff</h1>
+
+    <h1 style="background-color: #3cb371;">#3cb371</h1>
+
+    <h1 style="background-color: #ee82ee;">#ee82ee</h1>
+
+    <h1 style="background-color: #ffa500;">#ffa500</h1>
+
+    <h1 style="background-color: #6a5acd;">#6a5acd</h1>
+
+    <h1 style="background-color: #404040;">#404040</h1>
+
+    <h1 style="background-color: #686868;">#686868</h1>
+
+    <h1 style="background-color: #a0a0a0;">#a0a0a0</h1>
+
+    <h1 style="background-color: #bebebe;">#bebebe</h1>
+
+    <h1 style="background-color: #dcdcdc;">#dcdcdc</h1>
+
+    <h1 style="background-color: #f8f8f8;">#f8f8f8</h1>
+
+    <!--HSL Color Values-->
+    <h1 style="background-color: hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+
+    <h1 style="background-color: hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h1>
+
+    <h1 style="background-color: hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</h1>
+
+    <h1 style="background-color: hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</h1>
+
+    <h1 style="background-color: hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h1>
+
+    <h1 style="background-color: hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</h1>
+
+    <!--Saturation-->
+    <h1 style="background-color: hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+
+    <h1 style="background-color: hsl(0, 80%, 50%);">hsl(0, 80%, 50%)</h1>
+
+    <h1 style="background-color: hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</h1>
+
+    <h1 style="background-color: hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</h1>
+
+    <h1 style="background-color: hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</h1>
+
+    <h1 style="background-color: hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</h1>
+
+    <!--Lightness-->
+    <h1 style="background-color: hsl(0, 100%, 0%);">hsl(0, 100%, 0%)</h1>
+
+    <h1 style="background-color: hsl(0, 100%, 25%);">hsl(0, 100%, 25%)</h1>
+
+    <h1 style="background-color: hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+
+    <h1 style="background-color: hsl(0, 100%, 90%);">hsl(0, 100%, 75%)</h1>
+
+    <h1 style="background-color: hsl(0, 100%, 100%);">hsl(0, 100%, 100%)</h1>
+
+    <!--Shades of Gray-->
+    <h1 style="background-color: hsl(0, 0%, 20%);">hsl(0, 0%, 20%)</h1>
+
+    <h1 style="background-color: hsl(0, 0%, 30%);">hsl(0, 0%, 30%)</h1>
+
+    <h1 style="background-color: hsl(0, 0%, 40%);">hsl(0, 0%, 40%)</h1>
+
+    <h1 style="background-color: hsl(0, 0%, 60%);">hsl(0, 0%, 60%)</h1>
+
+    <h1 style="background-color: hsl(0, 0%, 70%);">hsl(0, 0%, 70%)</h1>
+
+    <h1 style="background-color: hsl(0, 0%, 90%);">hsl(0, 0%, 90%)</h1>
+
+    <!--HSLA Color Values-->
+    <h1 style="background-color: hsla(9, 100%, 64%, 0);">hsla(9, 100%, 64%, 0)</h1>
+
+    <h1 style="background-color: hsla(9, 100%, 64%, 0.2);">hsla(9, 100%, 64%, 0.2)</h1>
+
+    <h1 style="background-color: hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</h1>
+
+    <h1 style="background-color: hsla(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</h1>
+
+    <h1 style="background-color: hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</h1>
+
+    <h1 style="background-color: hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</h1>
+
+    <!--HTML Links - Syntas-->
+    <a href="https://www.w3schools.com">Visit W3Schools.com!</a>
+
+    <!--HTML Links - The Target Attribute-->
+    <a href="https://www.w3schools.com" target="_blank">Visit W3Schools</a>
+
+    <!--Absolute URLs vs. Relative URLs
+    <h2>Absolute URLs</h2>
+    <p><a href="https://www.w3.org">W3C</a></p>
+    <p><a href="https://www.google.com">Google</a></p>
+
+    <h2>Relative URLs</h2>
+    <p><a href="html_images.asp">HTML Images</a></p>
+    <p><a href="/css/default.asp">CSS Tutorial</a></p>-->
+
+    <!--HTML Links - Use an Image as a Link-->
+    <a href="default.asp">
+        <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+    </a>
+
+    <!--Link to an Email Address-->
+    <a href="mailto:minhnhat7690@gmail.com">Send Email</a>
+
+    <!--Button as a Link-->
+    <button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+    <!--Link Titles (appear when mouse moves over the element)-->
+    <a href="https://www.w3schools.com/html" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+    <!--More on absolute URLs and Relative URLs-->
+    <a href="https://www.w3schools.com/html">HTML Tutorial</a>
+
+    <!--Create a Bookmark in HTML-->
+    <a href="#C4">Jump to Chapter 4</a>
+
+    <!--HTML Images-->
+    <img src="pic_trulli.jpeg" alt="Italian Trulli" style="width:500px;height:600px;">
+
+    <p><img src="pic_trulli.jpeg" alt="Italian Trulli" style="float:right;width:42px;height:42px">The image will float to the right of the text</p>
+
+    <p><img src="pic_trulli.jpeg" alt="Italian Trulli" style="float:left;width:42px;height:42px">This image will float to the left of the text</p>
+
+    <!--Image Maps-->
+    <img src="pic_trulli.jpeg" alt="Italian Trulli" usemap="workmap">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" href="computer.htm" alt="computer">
+        <area shape="rect" coords="290,172,333,250" href="phone.htm" alt="Phone">
+        <area shape="circle" coords="337,300,44" href="coffee.htm" alt="Coffee">
+    </map>
+
+    <!--Background Image on a HTML element-->
+    <h2>Background Image</h2>
+    <p>A background image for a div element:</p>
+
+    <div style="background-image:url('pic_trulli.jpeg');">
+        You can specify background images<br> for any visible HTML element.<br> In this example, the background image<br> is specified for a div element.<br> By default, the background-image<br> will repeat itself in the direction(s)<br> where it is smaller
+        than the element<br> where it is specified. (Try resizing the<br> browser window to see how the<br> background image behaves.
+    </div>
+
+    <!--HTML <picture> Element-->
+    <picture>
+        <source media="(min-width: 650px" srcset="pic_trulli.jpeg">
+        <source media="(min-width: 465px)" srcset="pic_trulli.jpeg">
+        <img src="pic_trulli.jpeg" alt="">
+    </picture>
+
+    <!--HTML Tables-->
+    <!--Table Caption-->
+    <caption>Table Caption</caption>
+    <table id="t01" style="width: 100%">
+        <!--Table Heading (first row)-->
+        <thead>
+            <tr>
+                <th rowspan="2">Firstname</th>
+                <th colspan="2">Lastname</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+
+
+        <!--Table Data (from second row)-->
+        <tbody>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!--Unordered HTML List-->
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <!--Ordered HTML List-->
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <!--HTML Description Lists-->
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- Black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- White cold drink</dd>
+    </dl>
+
+    <!--HTML Unordered List Specific-->
+    <!--<ul style="list-style-type:disc;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <ul style="list-style-type:circle;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <ul style="list-style-type:square;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <ul style="list-style-type:none;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    Nested HTML Lists
+    <ul>
+        <li>Coffee</li>
+        <li>Tea
+            <ul>
+                <li>Black Tea</li>
+                <li>Green Tea</li>
+            </ul>
+        </li>
+        <li>Milk</li>
+    </ul>
+    -->
+
+    <!--Horizontal List with CSS-->
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+    <!---->
+
 </body>
 
 </html>
