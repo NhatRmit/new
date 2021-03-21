@@ -67,7 +67,8 @@
         td {
             border: 1px solid black;
             /*border-collapse: collapse;*/
-            padding: 15px
+            padding: 15px;
+            margin: 15px;
         }
         /*Table Add Cell Padding*/
         
@@ -191,6 +192,61 @@
             font-style: italic;
             padding: 2px;
             text-align: center;
+        }
+
+        main{
+            margin: 0px;
+            padding: 5px;
+            background-color: lightgray;
+        }
+
+        main > h1, p, .browser{
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .browser{
+            background: white;
+        }
+
+        .browser > h2, p{
+            margin: 4px;
+            font-size: 90%;
+        }
+
+        .button{
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button1{
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+        }
+
+        .button1:hover{
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .button2{
+            background-color: white;
+            color: black;
+            border: 2px solid #008CBA;
+        }
+
+        .button2:hover{
+            background-color: #008CBA;
+            color: white;
         }
 
     </style>
@@ -507,6 +563,7 @@
     <!--Block-level Elements-->
     <!--<div> element is a block-level element having a top and bottom margin-->
     <div>I would like to have a job</div>
+    
     <table>
         <tbody>
             <tr>
@@ -623,7 +680,7 @@
     </div>
 
     <!--fieldset (group related elements in a form)-->
-    <form action="/action_page.php">
+    <form action="">
         <fieldset>
             <legend>Personalia:</legend>
             <label for="fname">First name:</label>
@@ -638,11 +695,272 @@
         </fieldset>
     </form>
 
+    <!--figure and figcaption (figure to mark up a photo in doc, figcaption is content of photo)-->
     <figure>
         <img src="pic_trulli.jpeg" alt="Trulli" style="width:100%">
         <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
     </figure>
 
+    <!--form includes label and input and submit button-->
+    <!--Normal form-->
+    <form action="" method="get">
+        <label for="fname">First name:</label>
+        <input type="text" name="fname" id="fname"> <br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" name="lname" id="lname"> <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!--Form with checkbox-->
+    <form action="" method="get">
+        <input type="checkbox" name="vehicle1" value="Bike">
+        <label for="vehicle1">I have a bike</label> <br>
+        <input type="checkbox" name="vehicle2" value="Car">
+        <label for="vehicle2">I have a car</label><br>
+        <input type="checkbox" name="vehicle3" value="Boat" checked>
+        <label for="vehicle3">I have a boat</label><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!--Form with radiobutton-->
+    <form action="" method="get">
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" checked="checked">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">other</label><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!--footer and header are in article mostly-->
+    <article>
+        <header style="border: 1px solid;">
+            <p>This is a header</p>
+            <h1>Welcome to my Porfolio</h1>
+            <h2>My name is Nhat. I am a Frontend Developer</h2>
+        </header>
+
+        <hr> <!--hr is a line-->
+
+        <footer style="border: 1px solid;">
+            <p>This is a footer</p>
+            <h2>Contact List:</h2>
+            <p>Facbook - Instagram - Linkedin - Gmail - Phone</p>
+        </footer>
+    </article>
+
+    <br><br><br>
+    
+    <!--body - main (specifies the main content of doc) - article - header/body/footer - aside-->
+    <main>
+        <h1>The Most Popular Browsers</h1>
+        <p>Chrome, Firefox, and Edge are the most used browsers today.</p>
+        <article class="browser">
+            <h2>Google Chrome</h2>
+            <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+        </article>
+        <article class="browser">
+            <h2>Mozilla Firefox</h2>
+            <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+        </article>
+    </main>
+
+    <!-- nav tag-->
+    <nav>
+        <a href="/html">HTML</a>
+        <a href="/css">CSS</a>
+    </nav>
+
+    <!--noscript used to announce users that they disable JS or JS is not supported-->
+    <script>
+        document.write("I want to have a job!")
+    </script>
+    <noscript>Your browser does not support Javascript</noscript>
+
+    <!--pre tag helps to display exactly as in HTML-->
+    <pre>
+    AAA
+        BBB
+        CCC
+        DDD
+    </pre>
+
+    <!--code tag defines piece of computer code/ samp tag defines sample output from computer program/ var tag defines variable/ pre tag defines preformatted text => those 4 are for display-->
+
+    <!--section is similar to article, but it is bigger than article apparently -->
+    <section>
+        <h1>This is a section</h1>
+        <article>
+            <h2>This is an article</h2>
+        </article>
+    </section>
+
+    <!--video (use many type of video to let all browsers can watch the video)-->
+    <video width="320" height="240" controls> <!--attribute after controls to let you set your video as you want => autoplay - loop - muted - poster - preload -->
+        <source src="" type="video/mp4">
+        <source src="" type="video/ogg">
+        Your browser does not support video tag.
+    </video>
+
+
+    <!--Inline Elements-->
+    <table>
+        <tbody>
+            <tr>
+                <td>a</td>
+                <td>abbr</td>
+                <td>acronym</td>
+                <td>b</td>
+                <td>bdo</td>
+                <td>big</td>
+            </tr>
+            <tr>
+                <td>br</td>
+                <td>button</td>
+                <td>cite</td>
+                <td>code</td>
+                <td>dfn</td>
+                <td>em</td>
+            </tr>
+            <tr>
+                <td>i</td>
+                <td>img</td>
+                <td>input</td>
+                <td>kbd</td>
+                <td>label</td>
+                <td>map</td>
+            </tr>
+            <tr>
+                <td>object</td>
+                <td>output</td>
+                <td>q</td>
+                <td>samp</td>
+                <td>script</td>
+                <td>select</td>
+            </tr>
+            <tr>
+                <td>small</td>
+                <td>span</td>
+                <td>strong</td>
+                <td>sub</td>
+                <td>sup</td>
+                <td>textarea</td>
+            </tr>
+            <tr>
+                <td>time</td>
+                <td>tt</td>
+                <td>var</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--abbr and dfn(defination)-->
+    <p>
+        <dfn><abbr title="Cascading Style Sheets">CSS</abbr>
+            is a language that describes the style of an HTML doc.
+        </dfn>
+    </p>
+
+    <!--bdo specifies to the text direction-->
+    <bdo dir="rtl">this text will go right to left</bdo>
+
+    <!--button iis a clickable button-->
+    <!--Using attribute after type => autofocus - disabled - form - formaction - formenactype - formmethod - formnovalidate - formtarget - name - value-->
+    <button type="button">Click Me!</button>
+
+    <!--button with hover-->
+    <button class="button button1">Green</button>
+    <button class="button button2">Blue</button>
+
+    <!--i and em(important)/ b and strong(important)-->
+    <p><b>My</b> <em>name</em> <i>is</i> <strong>Nhat</strong></p>
+
+    <!--kbd text as keyboard input-->
+    <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text.</p>
+
+    <!--code text as computer code-->
+    <p><code>p</code> tag is about to create a paragraph.</p>
+
+    <!--samp text as outside input-->
+    <p><samp>File not found. Press F1 to continue</samp></p>
+
+    <!--var text as a variable-->
+    <p>The area of rectangle is height multiple width: <var>W</var> x <var>H</var></p>
+
+    <!--sub and sup-->
+    <p>This text contains <sub>subscript</sub></p>
+    <p>This text contains <sup>supscript</sup></p>
+
+    <!--object tag defines a container for an external resource-->
+    <!--an embedded image-->
+    <object data="pic_trulli.jpeg" width="300" height="200"></object>
+
+    <!--an embedded HTML-->
+    <object data="snippet.html" width="300" height="200"></object>
+
+    <!--an embedded video-->
+    <object data="" width="400" height="300"></object>
+
+    <!--image map witch clickable areas-->
+    <img src="workplace.jpg" alt="workplace" usemap="#workmap" width="400" height="379">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" href="computer.html" alt="computer">
+        <area shape="rect" coords="290,172,333,250" href="phone.html" alt="phone">
+        <area shape="circle" coords="337,300,44" href="coffee.html" alt="coffee">
+    </map>
+
+    <br><br><br>
+
+    <!--quotation tag-->
+    <p>WWF's goal is to:
+        <q>Build a future where people live in harmony with nature.</q>
+        We hope they succeed.
+    </p>
+
+    <!--output tag is used to represent the result of a calculation using with form-->
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+         <input type="range" id="a" value="50">
+        +<input type="number" id="b" value="25">
+        =<output name="x" for="a b"></output>
+    </form>
+    
+    <!--select tag is used to create a drop-down list, used in form to collect user input-->
+    <label for="cars">Choose a car:</label>
+
+    <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="merc">Merc</option>
+    </select>
+    <br><br>
+    <!--select used with optgroup-->
+    <label for="cars">Choose a car:</label>
+    <select name="cars" id="cars">
+        <optgroup label="Swedish Cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="German Cars">
+            <option value="merc">Merc</option>
+            <option value="audi">Audi</option>
+        </optgroup>
+    </select>
+
+    <!--span tag is an inline container to mark up a part of doc to easily style in CSS or manipulate in JS-->
+    <p>I will have <span style="color: #008CBA;">a house</span> bought by my money.</p>
+
+    <!--time tag defines time or datetime specifically-->
+    <p>I wake up at <time>4:00</time> everyday.</p>
+
+    <!--textarea where users can text a paragraph-->
+    <label for="w3review">Review of W3S:</label>
+    <textarea name="w3review" id="w3review" cols="30" rows="10">At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.</textarea>
+
+    <!--HTML Iframes-->
+
 </body>
 
 </html>
+tho
