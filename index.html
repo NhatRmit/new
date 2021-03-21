@@ -129,6 +129,70 @@
         li a:hover {
             background-color: #111111;
         }
+
+        .all-browsers{
+            margin: 0;
+            padding: 5px;
+            background-color: lightgray;
+        }
+
+        .all-browsers > h1, .browser{
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .browser{
+            background-color: white;
+        }
+
+        .browser > h2, p{
+            margin: 4px;
+            font-size:90%;
+        }
+
+        aside {
+            width: 30%;
+            padding-left: 15px;
+            margin-left: 15px;
+            float: right;
+            font-style: italic;
+            background-color: lightgray;
+        }
+
+        .myDiv{
+            border: 5px outset red;
+            background-color: lightblue;
+            text-align: center;
+        }
+
+        fieldset{
+            background-color: #eeeeee;
+        }
+
+        legend{
+            background-color: gray;
+            color: white;
+            padding: 5px 10px;
+        }
+
+        input{
+            margin: 5px;
+        }
+
+        figure{
+            border: 1px #cccccc solid;
+            padding: 4px;
+            margin: auto;
+        }
+
+        figcaption {
+            background-color: black;
+            color: white;
+            font-style: italic;
+            padding: 2px;
+            text-align: center;
+        }
+
     </style>
     <title>My Portfolio</title>
 </head>
@@ -429,67 +493,7 @@
                 <td>94</td>
             </tr>
         </tfoot>
-    </table>
-
-    <!--Unordered HTML List-->
-    <ul>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ul>
-
-    <!--Ordered HTML List-->
-    <ol>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ol>
-
-    <!--HTML Description Lists-->
-    <dl>
-        <dt>Coffee</dt>
-        <dd>- Black hot drink</dd>
-        <dt>Milk</dt>
-        <dd>- White cold drink</dd>
-    </dl>
-
-    <!--HTML Unordered List Specific-->
-    <!--<ul style="list-style-type:disc;">
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ul>
-
-    <ul style="list-style-type:circle;">
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ul>
-
-    <ul style="list-style-type:square;">
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ul>
-
-    <ul style="list-style-type:none;">
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ul>
-
-    Nested HTML Lists
-    <ul>
-        <li>Coffee</li>
-        <li>Tea
-            <ul>
-                <li>Black Tea</li>
-                <li>Green Tea</li>
-            </ul>
-        </li>
-        <li>Milk</li>
-    </ul>
-    -->
+    </table> 
 
     <!--Horizontal List with CSS-->
     <ul>
@@ -499,7 +503,145 @@
         <li><a href="#about">About</a></li>
     </ul>
 
-    <!---->
+    <br><br><br>
+    <!--Block-level Elements-->
+    <!--<div> element is a block-level element having a top and bottom margin-->
+    <div>I would like to have a job</div>
+    <table>
+        <tbody>
+            <tr>
+                <td>address</td>
+                <td>article</td>
+                <td>aside</td>
+                <td>blockquote</td>
+                <td>canvas</td>
+            </tr>
+            <tr>
+                <td>dd</td>
+                <td>div</td>
+                <td>dl</td>
+                <td>dt</td>
+                <td>fieldset</td>    
+            </tr>
+            <tr>
+                <td>figcaption</td>
+                <td>figure</td>
+                <td>footer</td>
+                <td>form</td>
+                <td>h1-h6</td>
+            </tr>
+            <tr>
+                <td>header</td>
+                <td>hr</td>
+                <td>li</td>
+                <td>main</td>
+                <td>nav</td>
+            </tr>
+            <tr>
+                <td>noscript</td>
+                <td>ol</td>
+                <td>p</td>
+                <td>pre</td>
+                <td>section</td>
+            </tr>
+            <tr>
+                <td>table</td>
+                <td>tfoot</td>
+                <td>ul</td>
+                <td>video</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!--address-->
+    <address>
+        Written by <a href="mailto:tulaviem@gmail.com">Nhat</a>.<br>
+        Visit me at: facebook.com <br>
+        Box 564, Disneyland <br>
+        USA
+    </address>
+
+    <!--article (article is useful for styling CSS, article is used for Forum Post, Blog Post, News Story)-->
+    <article class="all-browsers">
+        <h1>Most Popular Browser</h1>
+        <article class="browser">
+            <h2>Google Chrome</h2>
+            <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+        </article>
+        <article class="browser">
+            <h2>Firefox</h2>
+            <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+        </article>
+        <article class="browser">
+            <h2>Microsoft Edge</h2>
+            <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+        </article>
+    </article>
+    
+    <!--aside-->
+    <h1>The aside element</h1>
+    <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+    <aside>
+        <p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+    </aside>
+
+    <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+    <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+
+    <!--blockquote-->
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+    </blockquote>
+
+    <br><br><br>
+
+    <!--canvas-->
+    <h1>This is a canvas</h1>
+    <canvas id="myCanvas">
+        Your browser does not support the canvas tag.
+    </canvas>
+
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "red";
+        ctx.fillRect(20, 20, 75, 50);
+        //Turn transparency on
+        ctx.globalAlpha = 0.2;
+        ctx.fillStyle = "blue";
+        ctx.fillRect(50, 50, 75, 50);
+        ctx.fillStyle = "green";
+        ctx.fillRect(80, 80, 75, 50);
+    </script>
+
+    <!--div-->    
+    <div class="myDiv">
+        <h2>This is a heading in a div element</h2>
+        <p>This is some text in a div element.</p>
+    </div>
+
+    <!--fieldset (group related elements in a form)-->
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Personalia:</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <figure>
+        <img src="pic_trulli.jpeg" alt="Trulli" style="width:100%">
+        <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
+    </figure>
 
 </body>
 
