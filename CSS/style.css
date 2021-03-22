@@ -1,0 +1,134 @@
+* {
+    color: seashell;
+}
+
+body{
+    background-image: url(black\ wood.jpg);
+}
+
+/*Only id para1 is styled*/
+#para1/*Selector*/ {
+    color /*Property*/: red /*Value*/; /*Declaration*/
+    text-align /*Property*/: center /*Value*/; /*Declaration*/
+}
+
+/*Only class center styled*/
+.center{
+    color: blue;
+    text-align: center;
+}
+
+/*Only para with right class is styled*/
+p.right{
+    background-image: url(yellowwood.jpg);
+    color: seagreen;
+    text-align: right;
+}
+
+/*an element with 2 class*/
+p.center{
+    text-align:justify;
+    color: brown;
+}
+
+p.large{
+    font-style: 150%;
+}
+
+/*Grouping Selector*/
+h1, h2, h3, h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid;
+}
+
+.opac{
+    background-color: lightblue;
+    opacity: 0.6;
+}
+
+.trans{
+    background: rgba(0,128,0,0.6);
+}
+
+article{
+    background: url("godvkong.jpg") no-repeat scroll right top;
+}
+
+article p {
+    text-align: justify;
+    margin-right: 165px;
+}
+
+.dotted {
+    color: crimson;
+    text-align: left;
+    background-color: #fff;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    border: crimson dotted;
+}
+
+.dashed{
+    color: yellow;
+    text-align: left;
+    background-color: gray;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    border: yellow dashed;
+}
+
+.solid {
+    color: darkorchid;
+    text-align: left;
+    background-color: lightblue;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    border: darkorchid solid;
+}
+
+.double{
+    color: lightcoral;
+    text-align: left;
+    background-color: rgb(61, 61, 177);
+    font-family:Impact, 'Arial Narrow Bold', sans-serif;
+    border: lightcoral double;
+}
+
+.groove{
+    color: darkkhaki;
+    text-align: left;
+    background-color: aliceblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    border: darkkhaki groove ;
+}
+
+.ridge {
+    color: darkturquoise;
+    text-align: left;
+    background-color: gray;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    border: darkturquoise ridge;
+}
+
+.inset {
+    color:deeppink;
+    text-align: left;
+    background-color:dodgerblue;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    border: deeppink inset;
+}
+
+.outset {
+    color: firebrick;
+    text-align: left;
+    background-color: yellow;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 5px firebrick outset ;
+    border-radius: 15px;
+}
+
+.hidden {
+    color:green;
+    text-align: left;
+    background-color: lightgray;
+    font-family:Impact, 'Arial Narrow Bold', sans-serif;
+    border: green hidden;
+}
+
